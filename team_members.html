@@ -1,92 +1,95 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Team Members</title>
-    <link rel="stylesheet" href="../styles/minimal-table.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Members – Social Media Algorithms</title>
+  <link rel="stylesheet" href="styles/mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Site navigation menu -->
-    <ul class="navbar">
-        <li><a href="../index.html">Home page</a></li>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-text">Social Media Algorithms</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="topic.html">Technology/Topic</a></li>
         <li><a href="opportunities.html">Opportunities</a></li>
         <li><a href="risks.html">Risks</a></li>
         <li><a href="choices.html">Choices</a></li>
         <li><a href="references.html">References</a></li>
-        <li><a href="team-members.html">Team Members</a></li>
+        <li><a href="team-members.html" class="active">Team Members</a></li>
         <li><a href="meetings.html">Meeting Minutes</a></li>
         <li><a href="guidelines.html">Guidelines</a></li>
-    </ul>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="container">
+    <div class="header">
+      <a href="team-members.html"><div class="heading-1"><h1>Team Members</h1></div></a>
+      <p class="subtitle">COMP501 Group 32 · AUT 2026 Semester 1</p>
+    </div>
+  </div>
 
+  <div class="content-wrapper">
+    <h1>Meet the Team</h1>
+    <p>Group 32 consists of three AUT students working together on the Social Media Algorithms project for COMP501 Computing Technology in Society.</p>
 
+    <div class="team-grid">
 
-    <h1>Team Formation Form</h1><br>
-
-    <h4>Due Date: Advised on Canvas </h4>
-    <p><em>(Team coordinator to confirm team have met with your TA)</em></p>
-
-    <h4>
-        <p>Team name ____________________________________________________</p>
-    </h4>
-
-    <h4>
-        <p>Team coordinator/Leader ______________________________________</p>
-    </h4>
-
-    <table>
+      <div class="team-card">
+        <div class="avatar">G</div>
+        <h2>Gurshaan Singh Bansal</h2>
+        <div class="role">Editor – Opportunities & Benefits</div>
         <p>
-
-            <body>
-                <th>Team Member Details</th>
-
-
-                <th scope="col" class="last name">Last Name</th>
-                <th scope="col" class="first name">First Name</th>
-                <th scope="col" class="id">Student ID</th>
-
-                </tr>
-                <hr />
+          Responsible for researching personalisation, business growth, and content discovery.
+          Gathers sources and writes the Opportunities section.
         </p>
+      </div>
 
-        <p align="left" </p>
-            <th scope="row">Team Member 1</th>
-            <td></td>
-            <td></td>
-            <td></td>
+      <div class="team-card">
+        <div class="avatar">D</div>
+        <h2>Dilraj Singh Bhullar</h2>
+        <div class="role">Researcher – Risks & Ethical Issues</div>
+        <p>
+          Responsible for researching misinformation, privacy concerns, and mental health risks.
+          Also handles website design and HTML/CSS development.
+        </p>
+      </div>
 
-            </tr>
-        <p align="left" </p>
-            <th scope="row">Team Member 2</th>
-            <td></td>
-            <td></td>
-            <td></td>
+      <div class="team-card">
+        <div class="avatar">R</div>
+        <h2>Robert George William Sevele</h2>
+        <div class="role">Team Leader – Choices & References</div>
+        <p>
+          Responsible for researching societal choices including regulation, opt-out systems,
+          and transparency. Manages APA7 referencing and academic sources.
+        </p>
+      </div>
 
+    </div>
+  </div>
 
-            </tr>
-            <th scope="row">Team Member 3</th>
-            <td></td>
-            <td></td>
-            <td></td>
+  <footer class="footer">
+    <p>© 2026 Social Media Algorithms – COMP501 Group 32 · Auckland University of Technology</p>
+    <p>Gurshaan Singh Bansal &nbsp;|&nbsp; Dilraj Singh Bhullar &nbsp;|&nbsp; Robert George William Sevele</p>
+  </footer>
 
-
-            </tr>
-
-
-    </table>
-
-
-    <hr />
-    <p>
-    <h6><em>Note: These details will be provided via your group on Canvas, but here the preferred option will be to fill
-            in the cells in your site with 'hard coded' details in this formbetween each cell ('td' = "table data"
-            element) in a row, and email the link to your TA when completed. Think of this site as a work in progress.
-            </p>
-    </h6></em>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.navbar nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
 
 </body>
-
 </html>
