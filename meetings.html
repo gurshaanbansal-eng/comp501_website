@@ -1,54 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>guidelines</title>
-  <link rel="stylesheet" href="../styles/minimal-table.css" type="text/css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Minutes – Social Media Algorithms</title>
+  <link rel="stylesheet" href="styles/mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Site navigation menu -->
-  <ul class="navbar">
-		<li><a href="../index.html">Home page</a></li>
-		<li><a href="topic.html">Technology/Topic</a></li>
-		<li><a href="opportunities.html">Opportunities</a></li>
-		<li><a href="risks.html">Risks</a></li>
-		<li><a href="choices.html">Choices</a></li>
-		<li><a href="references.html">References</a></li>
-		<li><a href="team-members.html">Team Members</a></li>
-		<li><a href="meetings.html">Meeting Minutes</a></li>
-		<li><a href="guidelines.html">Guidelines</a></li>
-	</ul>
 
+  <header class="navbar">
+    <a href="index.html" class="logo-text">Social Media Algorithms</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html">Technology/Topic</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="risks.html">Risks</a></li>
+        <li><a href="choices.html">Choices</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="team-members.html">Team Members</a></li>
+        <li><a href="meetings.html" class="active">Meeting Minutes</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="container">
+    <div class="header">
+      <a href="meetings.html"><div class="heading-1"><h1>Meeting Minutes</h1></div></a>
+      <p class="subtitle">Group 32 Progress & Discussion Logs</p>
+    </div>
+  </div>
 
+  <div class="content-wrapper">
+    <h1>Meeting Minutes</h1>
+    <p>A record of all Group 32 meetings, decisions made, and tasks assigned throughout the COMP501 project.</p>
 
-  <h1>Meeting Minutes</h1><br>
+    <div class="meeting-card">
+      <div class="meeting-meta">
+        <span>Meeting 1</span>
+        <span>[ Insert Date ]</span>
+        <span>[ Insert Location / Platform ]</span>
+      </div>
+      <h2>[ Insert Meeting Title ]</h2>
+      <ul>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+      </ul>
+      <div class="attendees">Attendees: Gurshaan Singh Bansal, Dilraj Singh Bhullar, Robert George William Sevele</div>
+    </div>
 
+    <div class="meeting-card">
+      <div class="meeting-meta">
+        <span>Meeting 2</span>
+        <span>[ Insert Date ]</span>
+        <span>[ Insert Location / Platform ]</span>
+      </div>
+      <h2>[ Insert Meeting Title ]</h2>
+      <ul>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+      </ul>
+      <div class="attendees">Attendees: Gurshaan Singh Bansal, Dilraj Singh Bhullar, Robert George William Sevele</div>
+    </div>
 
-  <h4>
-    <p>Team name ____________________________________________________</p>
-  </h4>
+    <div class="meeting-card">
+      <div class="meeting-meta">
+        <span>Meeting 3</span>
+        <span>[ Insert Date ]</span>
+        <span>[ Insert Location / Platform ]</span>
+      </div>
+      <h2>[ Insert Meeting Title ]</h2>
+      <ul>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+        <li>[ Insert agenda item / discussion point ]</li>
+      </ul>
+      <div class="attendees">Attendees: Gurshaan Singh Bansal, Dilraj Singh Bhullar, Robert George William Sevele</div>
+    </div>
 
-  <h4>
-    <p>Team Coordinator/Leader ______________________________________</p>
-  </h4>
+  </div>
 
-  <h2>Page Purpose and Instructions</h2>
+  <footer class="footer">
+    <p>© 2026 Social Media Algorithms – COMP501 Group 32 · Auckland University of Technology</p>
+    <p>Gurshaan Singh Bansal &nbsp;|&nbsp; Dilraj Singh Bhullar &nbsp;|&nbsp; Robert George William Sevele</p>
+  </footer>
 
-  <p>This page is intended to serve as a location to provide your team’s meeting minutes throughout the project. You can
-    provide a link to your repository of meeting minutes, or upload/type them directly here.</p>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.navbar nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
 
-  <a href="https://canvas.aut.ac.nz/courses/1048/discussion_topics/3449" Meeting Minutes Repository Alternative Link</a>
-
-
-
-    <hr />
-    <p>
-      <!-- <h6><em>Note: the preferred option will be to replace these links in your site with equivalent links to your
-          repository e.g. Canvas discussion Board pages or Dropbox links</h6></em> -->
-    </p>
 </body>
-
 </html>
