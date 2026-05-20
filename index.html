@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home – Social Media Algorithms</title>
+  <link rel="stylesheet" href="styles/mystyles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-text">Social Media Algorithms</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="topic.html">Technology/Topic</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="risks.html">Risks</a></li>
+        <li><a href="choices.html">Choices</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="team-members.html">Team</a></li>
+        <li><a href="meetings.html">Meeting Minutes</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Social Media Algorithms</h1>
+    <p>Opportunities, Risks and Choices for Society — COMP501 Group 32 · AUT 2026</p>
+  </div>
+
+  <div class="intro">
+    <p>Every time you open Instagram, TikTok, or YouTube, an algorithm decides what you see. These systems track what you watch, skip, like, and share — then use that data to keep you scrolling. This project explores the opportunities they create, the risks they pose, and the choices we have as a society.</p>
+  </div>
+
+  <div class="navigationbar">
+    <a href="topic.html" class="nav-section">
+      <div class="nav-section-title">Technology / Topic</div>
+      <div class="nav-section-desc">What social media algorithms are and how they work.</div>
+    </a>
+    <a href="opportunities.html" class="nav-section">
+      <div class="nav-section-title">Opportunities</div>
+      <div class="nav-section-desc">Benefits for individuals, businesses, and society.</div>
+    </a>
+    <a href="risks.html" class="nav-section">
+      <div class="nav-section-title">Risks</div>
+      <div class="nav-section-desc">Harms, misinformation, and ethical concerns.</div>
+    </a>
+    <a href="choices.html" class="nav-section">
+      <div class="nav-section-title">Choices</div>
+      <div class="nav-section-desc">What individuals, companies, and governments can do.</div>
+    </a>
+    <a href="references.html" class="nav-section">
+      <div class="nav-section-title">References</div>
+      <div class="nav-section-desc">All academic sources in APA7 format.</div>
+    </a>
+    <a href="team-members.html" class="nav-section">
+      <div class="nav-section-title">Team</div>
+      <div class="nav-section-desc">Who we are and what each person researched.</div>
+    </a>
+    <a href="guidelines.html" class="nav-section">
+      <div class="nav-section-title">Guidelines</div>
+      <div class="nav-section-desc">Our group working agreement.</div>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Social Media Algorithms – COMP501 Group 32 · Auckland University of Technology</p>
+    <p>Gurshaan Singh Bansal &nbsp;·&nbsp; Dilraj Singh Bhullar &nbsp;·&nbsp; Robert George William Sevele</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.navbar nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
