@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References – Social Media Algorithms</title>
+  <link rel="stylesheet" href="styles/mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-text">Social Media Algorithms</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html">Technology/Topic</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="risks.html">Risks</a></li>
+        <li><a href="choices.html">Choices</a></li>
+        <li><a href="references.html" class="active">References</a></li>
+        <li><a href="team-members.html">Team Members</a></li>
+        <li><a href="meetings.html">Meeting Minutes</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="header">
+      <a href="references.html"><div class="heading-1"><h1>References</h1></div></a>
+      <p class="subtitle">APA7 Academic Sources & Citations</p>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <h1>References</h1>
+    <p>
+      All sources listed below follow APA 7th edition formatting. References compiled and managed by
+      <strong style="color:#00bcd4;">Robert George William Sevele</strong>.
+    </p>
+
+    <h2>Sources</h2>
+    <ul class="ref-list">
+      <li>[ Insert APA7 reference here ]</li>
+      <li>[ Insert APA7 reference here ]</li>
+      <li>[ Insert APA7 reference here ]</li>
+      <li>[ Insert APA7 reference here ]</li>
+      <li>[ Insert APA7 reference here ]</li>
+    </ul>
+
+    <h2>Adapted Code & Resources</h2>
+    <ul class="ref-list">
+      <li>
+        W3C. (2021). <em>My first styled page.</em>
+        <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html" target="_blank">
+          https://www.w3.org/Style/Examples/011/firstcss.en.html
+        </a>
+      </li>
+      <li>
+        Mozilla Developer Network. (n.d.). <em>Web technology for developers.</em>
+        <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">
+          https://developer.mozilla.org/en-US/docs/Web
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Social Media Algorithms – COMP501 Group 32 · Auckland University of Technology</p>
+    <p>Gurshaan Singh Bansal &nbsp;|&nbsp; Dilraj Singh Bhullar &nbsp;|&nbsp; Robert George William Sevele</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.navbar nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

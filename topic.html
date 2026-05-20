@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology/Topic – Social Media Algorithms</title>
+  <link rel="stylesheet" href="styles/mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-text">Social Media Algorithms</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html" class="active">Technology/Topic</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="risks.html">Risks</a></li>
+        <li><a href="choices.html">Choices</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="team-members.html">Team Members</a></li>
+        <li><a href="meetings.html">Meeting Minutes</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="header">
+      <a href="topic.html"><div class="heading-1"><h1>Technology / Topic</h1></div></a>
+      <p class="subtitle">What are Social Media Algorithms?</p>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <h1>What Are Social Media Algorithms?</h1>
+    <p>
+      Every time you open Instagram, TikTok, or YouTube, an algorithm decides what you see first.
+      These systems track exactly what you watch, skip, like, and share — then use that data to keep
+      you scrolling as long as possible. Understanding how they work is the first step to understanding
+      their impact on society.
+    </p>
+
+    <h2>How Do They Work?</h2>
+    <p>
+      Social media algorithms are sets of rules and machine learning models used by platforms to rank,
+      filter, and personalise the content shown to each user. Rather than displaying posts in
+      chronological order, they prioritise content based on predicted engagement — likes, comments,
+      shares, and time spent viewing.
+    </p>
+    <p>
+      Key signals used by algorithms typically include: past interactions (what you've liked or
+      commented on), content type preferences, time of posting, and the behaviour of similar users.
+      Over time the algorithm builds a detailed profile of your interests and uses it to serve content
+      it predicts will keep you on the platform longer.
+    </p>
+
+    <h2>Why It Matters</h2>
+    <p>
+      These algorithms are built to maximise engagement — not necessarily to support your wellbeing
+      or show you accurate information. This has enormous consequences: from shaping political opinions
+      and spreading misinformation, to impacting the mental health of teenagers and determining which
+      small businesses succeed or fail.
+    </p>
+    <p>
+      As future computing professionals, understanding these systems means we can build more
+      responsible technology and help society make better choices about how platforms are designed
+      and regulated.
+    </p>
+
+    <h2>Platforms We Examined</h2>
+    <ul>
+      <li><strong>TikTok</strong> — Uses a powerful recommendation engine driven by watch time and interaction patterns.</li>
+      <li><strong>Instagram</strong> — Combines interest signals, relationship signals, and timeliness to rank the feed.</li>
+      <li><strong>YouTube</strong> — Prioritises videos that maximise watch time and session duration.</li>
+      <li><strong>Facebook</strong> — Factors in meaningful interactions, especially comments and shares from close connections.</li>
+    </ul>
+
+    <h2>Our Topic Focus</h2>
+    <p>
+      Our group — Group 32 — is investigating the social, ethical, and technical implications of social
+      media algorithms. We explore the opportunities they create, the risks they pose, and the choices
+      available to individuals, companies, and governments to manage their impact responsibly.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Social Media Algorithms – COMP501 Group 32 · Auckland University of Technology</p>
+    <p>Gurshaan Singh Bansal &nbsp;|&nbsp; Dilraj Singh Bhullar &nbsp;|&nbsp; Robert George William Sevele</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.navbar nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
