@@ -11,8 +11,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #f8f9fb;
+  color: #333;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -20,100 +20,103 @@ body {
 /* ---- NAVBAR ---- */
 
 .navbar {
-  background-color: #ffffff;
-  border-bottom: 2px solid #111111;
+  background-color: #fff;
+  border-bottom: 1px solid #e8eaf0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 30px;
+  padding: 14px 28px;
   position: sticky;
   top: 0;
   z-index: 100;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .logo-text {
   font-size: 14px;
   font-weight: bold;
-  color: #111111;
+  color: #333;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .navbar nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 2px;
 }
 
 .navbar nav ul li a {
   display: block;
-  color: #666666;
+  color: #777;
   text-decoration: none;
   font-size: 13px;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .navbar nav ul li a:hover {
-  color: #111111;
-  background-color: #f0f0f0;
+  background-color: #f0f2f8;
+  color: #333;
 }
 
 .navbar nav ul li a.active {
-  color: #1a56db;
+  color: #4f7ef8;
   font-weight: bold;
 }
 
+/* Hamburger button */
 .nav-toggle {
   display: none;
   background: none;
-  border: none;
+  border: 1px solid #e8eaf0;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 4px;
+  padding: 6px 8px;
+  line-height: 1;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.hamburger {
   display: block;
-  width: 22px;
+  width: 18px;
   height: 2px;
-  background-color: #111111;
+  background: #555;
   position: relative;
 }
 
 .hamburger::before,
 .hamburger::after {
   content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #555;
   position: absolute;
   left: 0;
 }
 
-.hamburger::before { top: -7px; }
-.hamburger::after  { top:  7px; }
+.hamburger::before { top: -6px; }
+.hamburger::after  { top:  6px; }
 
 /* ---- HERO (home page) ---- */
 
 .hero {
-  padding: 60px 30px 24px;
+  padding: 50px 28px 20px;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
-  color: #111111;
-  margin-bottom: 10px;
+  color: #2a2d3e;
+  margin-bottom: 8px;
 }
 
 .hero p {
   font-size: 13px;
-  color: #999999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #aaa;
 }
 
 /* ---- INTRO (home page) ---- */
@@ -121,13 +124,13 @@ body {
 .intro {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 30px 30px;
-  border-bottom: 2px solid #111111;
+  padding: 16px 28px 28px;
+  border-bottom: 1px solid #e8eaf0;
 }
 
 .intro p {
   font-size: 14px;
-  color: #555555;
+  color: #666;
   line-height: 1.8;
   max-width: 620px;
 }
@@ -137,69 +140,62 @@ body {
 .navigationbar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+  border-top: 1px solid #e8eaf0;
 }
 
 .nav-section {
   display: block;
-  padding: 24px 26px;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 22px 24px;
+  border-right: 1px solid #e8eaf0;
+  border-bottom: 1px solid #e8eaf0;
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #fff;
+  transition: background 0.15s;
 }
 
 .nav-section:hover {
-  background-color: #f7f7f7;
+  background-color: #f4f6ff;
 }
-
-.nav-section:nth-child(4n) { border-right: none; }
-.nav-section:nth-child(5),
-.nav-section:nth-child(6),
-.nav-section:nth-child(7) { border-bottom: none; }
-.nav-section:nth-child(7) { border-right: none; }
 
 .nav-section-title {
   font-size: 13px;
   font-weight: bold;
-  color: #111111;
-  margin-bottom: 6px;
+  color: #2a2d3e;
+  margin-bottom: 5px;
 }
 
 .nav-section-desc {
   font-size: 12px;
-  color: #999999;
+  color: #aaa;
   line-height: 1.5;
 }
 
 .nav-section::after {
   content: '→';
   display: block;
-  margin-top: 16px;
-  color: #1a56db;
+  margin-top: 14px;
+  color: #4f7ef8;
   font-size: 14px;
-}
-
-.nav-section:hover::after {
-  color: #111111;
 }
 
 /* ---- PAGE HEADER (inner pages) ---- */
 
 .container {
-  border-bottom: 1px solid #e0e0e0;
-  padding: 0 30px;
+  border-bottom: 1px solid #e8eaf0;
+  padding: 0 28px;
 }
 
 .container .header {
   max-width: 900px;
   margin: 0 auto;
-  padding: 50px 0 40px;
+  padding: 48px 0 36px;
 }
 
 .heading-1 h1 {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: bold;
-  color: #111111;
+  color: #2a2d3e;
 }
 
 .container .header a {
@@ -208,10 +204,8 @@ body {
 
 .container .header .subtitle {
   font-size: 12px;
-  color: #999999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  color: #aaa;
+  margin-top: 8px;
 }
 
 /* ---- CONTENT WRAPPER (inner pages) ---- */
@@ -219,90 +213,63 @@ body {
 .content-wrapper {
   max-width: 700px;
   margin: 0 auto;
-  padding: 50px 30px 80px;
+  padding: 48px 28px 80px;
 }
 
 .content-wrapper h1 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
-  color: #111111;
-  border-bottom: 2px solid #111111;
-  padding-bottom: 16px;
-  margin-bottom: 30px;
+  color: #2a2d3e;
+  border-bottom: 2px solid #e8eaf0;
+  padding-bottom: 14px;
+  margin-bottom: 28px;
 }
 
 .content-wrapper h2 {
   font-size: 11px;
   font-weight: bold;
-  color: #1a56db;
+  color: #4f7ef8;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 36px;
+  letter-spacing: 1.5px;
+  margin-top: 32px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e8eaf0;
   padding-bottom: 6px;
 }
 
 .content-wrapper p {
   font-size: 14px;
-  color: #555555;
+  color: #666;
   line-height: 1.8;
   margin-bottom: 16px;
 }
 
 .content-wrapper ul,
 .content-wrapper ol {
-  padding-left: 0;
-  list-style: none;
+  padding-left: 20px;
   margin-bottom: 16px;
 }
 
 .content-wrapper ul li,
 .content-wrapper ol li {
   font-size: 14px;
-  color: #555555;
+  color: #666;
   line-height: 1.7;
-  padding-left: 18px;
-  position: relative;
   margin-bottom: 8px;
 }
 
-.content-wrapper ul li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: #1a56db;
-}
-
-.content-wrapper ol {
-  counter-reset: n;
-}
-
-.content-wrapper ol li {
-  counter-increment: n;
-}
-
-.content-wrapper ol li::before {
-  content: counter(n) '.';
-  position: absolute;
-  left: 0;
-  color: #1a56db;
-  font-size: 12px;
-  font-weight: bold;
-}
-
 .content-wrapper strong {
-  color: #111111;
+  color: #2a2d3e;
   font-weight: bold;
 }
 
 code {
-  background-color: #f5f5f5;
-  color: #1a56db;
+  background-color: #f0f2f8;
+  color: #4f7ef8;
   padding: 2px 6px;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 13px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e8eaf0;
 }
 
 /* ---- TEAM GRID ---- */
@@ -310,16 +277,17 @@ code {
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 2px solid #111111;
-  border-radius: 6px;
+  border: 1px solid #e8eaf0;
+  border-radius: 10px;
   overflow: hidden;
   margin-top: 24px;
+  background: #fff;
 }
 
 .team-card {
-  background-color: #ffffff;
-  padding: 28px 22px;
-  border-right: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: 26px 20px;
+  border-right: 1px solid #e8eaf0;
 }
 
 .team-card:last-child {
@@ -329,7 +297,7 @@ code {
 .team-card h2 {
   font-size: 13px;
   font-weight: bold;
-  color: #111111;
+  color: #2a2d3e;
   border: none;
   padding: 0;
   margin-bottom: 4px;
@@ -340,7 +308,7 @@ code {
 .team-card .role {
   font-size: 11px;
   font-weight: bold;
-  color: #1a56db;
+  color: #4f7ef8;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -348,25 +316,23 @@ code {
 
 .team-card p {
   font-size: 12px;
-  color: #999999;
+  color: #aaa;
   margin: 0;
-  line-height: 1.6;
 }
 
 /* ---- MEETING CARDS ---- */
 
 .meeting-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 20px 24px;
+  border: 1px solid #e8eaf0;
+  border-radius: 10px;
+  padding: 20px 22px;
   margin-bottom: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-
 
 .meeting-card .meeting-meta {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
   margin-bottom: 8px;
 }
@@ -374,7 +340,7 @@ code {
 .meeting-card .meeting-meta span {
   font-size: 11px;
   font-weight: bold;
-  color: #1a56db;
+  color: #4f7ef8;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -382,7 +348,7 @@ code {
 .meeting-card h2 {
   font-size: 14px;
   font-weight: bold;
-  color: #111111;
+  color: #2a2d3e;
   border: none;
   padding: 0;
   margin-bottom: 10px;
@@ -391,49 +357,39 @@ code {
 }
 
 .meeting-card ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 18px;
   margin: 0;
 }
 
 .meeting-card ul li {
   font-size: 13px;
-  color: #555555;
-  padding-left: 14px;
-  position: relative;
+  color: #666;
   margin-bottom: 5px;
-}
-
-.meeting-card ul li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: #1a56db;
 }
 
 .meeting-card .attendees {
   margin-top: 12px;
   font-size: 12px;
-  color: #999999;
+  color: #aaa;
   padding-top: 10px;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e8eaf0;
 }
 
 /* ---- GUIDELINE BLOCKS ---- */
 
 .guideline-block {
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 20px 24px;
+  border: 1px solid #e8eaf0;
+  border-radius: 10px;
+  padding: 20px 22px;
   margin-bottom: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-
 
 .guideline-block h2 {
   font-size: 11px;
   font-weight: bold;
-  color: #1a56db;
+  color: #4f7ef8;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   border: none;
@@ -442,25 +398,16 @@ code {
 }
 
 .guideline-block ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 18px;
   margin: 0;
 }
 
 .guideline-block ul li {
   font-size: 13px;
-  color: #555555;
-  padding-left: 14px;
-  position: relative;
+  color: #666;
   margin-bottom: 7px;
   line-height: 1.6;
-}
-
-.guideline-block ul li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: #1a56db;
 }
 
 /* ---- REFERENCE LIST ---- */
@@ -472,41 +419,41 @@ code {
 
 .ref-list li {
   padding: 14px 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e8eaf0;
   font-size: 13px;
-  color: #555555;
+  color: #666;
   line-height: 1.75;
 }
 
 .ref-list li:first-child {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e8eaf0;
 }
 
 .ref-list li a {
-  color: #1a56db;
+  color: #4f7ef8;
   word-break: break-all;
   text-decoration: none;
 }
 
-
 /* ---- FOOTER ---- */
 
 .footer {
-  background-color: #111111;
-  color: #666666;
+  background-color: #f0f2f8;
+  color: #999;
   text-align: center;
-  padding: 32px 30px;
+  padding: 30px 28px;
   font-size: 12px;
   line-height: 2;
+  border-top: 1px solid #e8eaf0;
 }
 
 .footer a {
-  color: #888888;
+  color: #4f7ef8;
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #ffffff;
+  color: #2a2d3e;
 }
 
 /* ---- RESPONSIVE ---- */
@@ -516,16 +463,13 @@ code {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-section:nth-child(2n) { border-right: none; }
-  .nav-section:nth-child(n+6) { border-bottom: none; }
-
   .team-grid {
     grid-template-columns: 1fr;
   }
 
   .team-card {
     border-right: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e8eaf0;
   }
 
   .team-card:last-child {
@@ -539,11 +483,11 @@ code {
   .navbar nav {
     display: none;
     position: absolute;
-    top: 54px;
+    top: 56px;
     left: 0;
     right: 0;
-    background-color: #ffffff;
-    border-top: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-top: 1px solid #e8eaf0;
     padding: 10px 20px 14px;
   }
 
@@ -554,14 +498,12 @@ code {
     gap: 2px;
   }
 
-  .hero { padding: 36px 20px 20px; }
-  .hero h1 { font-size: 28px; }
-  .intro { padding: 16px 20px 24px; }
+  .hero { padding: 32px 20px 16px; }
+  .hero h1 { font-size: 26px; }
+  .intro { padding: 14px 20px 22px; }
   .container { padding: 0 20px; }
-  .content-wrapper { padding: 36px 20px 60px; }
+  .content-wrapper { padding: 32px 20px 60px; }
 
   .navigationbar { grid-template-columns: 1fr; }
-  .nav-section { border-right: none !important; border-bottom: 1px solid #e0e0e0 !important; }
-
-  .footer { padding: 24px 20px; }
+  .footer { padding: 22px 20px; }
 }
